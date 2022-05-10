@@ -1,0 +1,69 @@
+div.field {
+    background-color: #97BB87;
+    width: 670px;
+    height: 334px;
+  }
+  
+  div.linha {
+    border: solid 4px rgb(255, 255, 255);
+  }
+  
+  div.lateral {
+    margin: 10px;
+    width: 642px;
+    height: 306px;
+    top: 10px;
+    position: relative;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .area {
+    width: 70px;
+    height: 140px;
+  }
+  
+  div.left {
+    border-left: 0;
+  }
+  
+  div.right {
+    border-right: 0;
+  }
+  
+  div.circulo {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+  }
+  
+  .jogador {
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 100% !important;
+    width: 38px !important;
+    height: 38px !important;
+    position: absolute !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-image: url('./assets/default.png');
+  }
+   
+  #divTime{
+    background-size: 670px 115px;
+    background-position: 100%;
+    background-repeat: no-repeat;
+  }
+  .nomeTime{
+    color: rgb(255, 230, 0);
+    text-align: center;
+    border: solid 1px blue;
+    width: 670px;
+    height: 115px;
+    background-image: url('./assets/default.jpg');
+  }
+
+  .nomeTime h1{
+      padding-left: 75%;
+      padding-top: 60px;
+  }

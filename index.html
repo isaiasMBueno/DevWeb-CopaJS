@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Posicionamento Times</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class='field'>
+      <div class='lateral linha'>
+        <div class='linha area left'></div>
+        <div class='circulo linha'></div>
+        <div class='linha area right'></div>
+      </div>
+      <div id="b1"  class='jogador' onClick="onClickJogador('b1',  00)" onmouseover="GetNome('b1' , 00)"></div>
+      <div id="b2"  class='jogador' onClick="onClickJogador('b2' , 01)" onmouseover="GetNome('b2' , 01)"></div>
+      <div id="b3"  class='jogador' onClick="onClickJogador('b3' , 02)" onmouseover="GetNome('b3' , 02)"></div>
+      <div id="b4"  class='jogador' onClick="onClickJogador('b4' , 03)" onmouseover="GetNome('b4' , 03)"></div>
+      <div id="b5"  class='jogador' onClick="onClickJogador('b5' , 04)" onmouseover="GetNome('b5' , 04)"></div>
+      <div id="b6"  class='jogador' onClick="onClickJogador('b6' , 05)" onmouseover="GetNome('b6' , 05)"></div>
+      <div id="b7"  class='jogador' onClick="onClickJogador('b7' , 06)" onmouseover="GetNome('b7' , 06)"></div>
+      <div id="b8"  class='jogador' onClick="onClickJogador('b8' , 07)" onmouseover="GetNome('b8' , 07)"></div>
+      <div id="b9"  class='jogador' onClick="onClickJogador('b9' , 08)" onmouseover="GetNome('b9' , 08)"></div>
+      <div id="b10" class='jogador' onClick="onClickJogador('b10', 09)" onmouseover="GetNome('b10', 09)"></div>
+      <div id="b11" class='jogador' onClick="onClickJogador('b11', 10)" onmouseover="GetNome('b11', 10)"></div>
+    </div>
+    <div>
+      <div id="divTime" class='nomeTime'>
+        <h1 id="nomeTime">
+          
+        </h1>
+      </div>
+    </div>
+    <select #selectTime name="selectTime" id="selectTime" onchange="onChangeValueSelect(selectTime)"> 
+        <option value="">-- selecione um time --</option>
+    </select>
+    <select #selectFormacao name="selectFormacao" id="selectFormacao" onchange="onChangeValueSelectFormacao(selectFormacao)"> 
+        <option value="">-- selecione uma formação --</option>
+    </select>
+  <script src="./data/posicoes/posicoesConfig.js"></script>  
+  <script src="./data/times/brasil.js"></script>
+  <script src="./data/times/argentina.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+var Brasil = {
+    ImagemTime: "url('./assets/Brasil.jpeg')",
+    Jogadores:
+    [
+        {
+            Nome:"Alisson",
+            Posicao:"gol",
+            Imagem:"url('./assets/brasil/1.png')"
+        },
+        {
+            Nome:"Danilo",
+            Posicao:"lat",
+            Imagem:"url('./assets/brasil/2.jpg')"
+        },
+        {
+            Nome:"Thiago Silva",
+            Posicao:"zag",
+            Imagem:"url('./assets/brasil/3.jpg')"
+        },
+        {
+            Nome:"Miranda",
+            Posicao:"zag",
+            Imagem:"url('./assets/brasil/4.jpg')"
+        },
+        {
+            Nome:"Marcelo",
+            Posicao:"lat",
+            Imagem:"url('./assets/brasil/5.jpg')"
+        },
+        {
+            Nome:"Casemiro",
+            Posicao:"mei",
+            Imagem:"url('./assets/brasil/6.jpg')"
+        },
+        {
+            Nome:"Paulinho",
+            Posicao:"mei",
+            Imagem:"url('./assets/brasil/7.jpg')"
+        },
+        {
+            Nome:"Philippe Coutinho",
+            Posicao:"mei",
+            Imagem:"url('./assets/brasil/8.jpg')"
+        },
+        {
+            Nome:"Willian",
+            Posicao:"ata",
+            Imagem:"url('./assets/brasil/9.jpg')"
+        },
+        {
+            Nome:"Neymar",
+            Posicao:"ata",
+            Imagem:"url('./assets/brasil/10.jpg')"
+        },
+        {
+            Nome:"Gabriel Jesus",
+            Posicao:"ata",
+            Imagem:"url('./assets/brasil/11.jpg')"
+        }
+    ]
+}
