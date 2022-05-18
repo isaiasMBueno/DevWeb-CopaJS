@@ -124,6 +124,6 @@ function onChangeValueSelect(selectedValue){
 }
 
 function onChangeValueSelectFormacao(selectedValue){
-
+    document.getElementById("posicao").innerText= selectedValue.value;
     this.SetPosicaoJogadores(selectedValue.value);
 }

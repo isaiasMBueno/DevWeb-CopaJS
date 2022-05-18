@@ -1,45 +1,146 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Posicionamento Times</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Posicionamento Times</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <h1>
+        Posicionamento dos Jogadores
+      </h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-md-12-center">
+      <div id="carouselImgTimes" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselImgTimes" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselImgTimes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselImgTimes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/Argentina.jpg" class="d-block w-100" alt="Argentina">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Argentina</h5>
+              <p>Campeão mundial 2 vezes</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/Brasil.jpeg" class="d-block w-100" alt="Brasil">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Brasil</h5>
+              <p>Campeão mundial 5 vezes</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/default.jpg" class="d-block w-100" alt="Default">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Default</h5>
+              <p>Campeão mundial ? vezes</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselImgTimes" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselImgTimes" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <h1>
+        Posicionamento
+        <small class="text-muted" id="posicao"></small>
+      </h1>
+    </div>
+    <div class="row justify-content-md-center">
+      <h1 id="nomeTime"></h1>
+    </div>
+  </div>
+
+  <div class="row campoPosicoes">
+
     <div class='field'>
       <div class='lateral linha'>
         <div class='linha area left'></div>
         <div class='circulo linha'></div>
         <div class='linha area right'></div>
       </div>
-      <div id="b1"  class='jogador' onClick="onClickJogador('b1',  00)" onmouseover="GetNome('b1' , 00)"></div>
-      <div id="b2"  class='jogador' onClick="onClickJogador('b2' , 01)" onmouseover="GetNome('b2' , 01)"></div>
-      <div id="b3"  class='jogador' onClick="onClickJogador('b3' , 02)" onmouseover="GetNome('b3' , 02)"></div>
-      <div id="b4"  class='jogador' onClick="onClickJogador('b4' , 03)" onmouseover="GetNome('b4' , 03)"></div>
-      <div id="b5"  class='jogador' onClick="onClickJogador('b5' , 04)" onmouseover="GetNome('b5' , 04)"></div>
-      <div id="b6"  class='jogador' onClick="onClickJogador('b6' , 05)" onmouseover="GetNome('b6' , 05)"></div>
-      <div id="b7"  class='jogador' onClick="onClickJogador('b7' , 06)" onmouseover="GetNome('b7' , 06)"></div>
-      <div id="b8"  class='jogador' onClick="onClickJogador('b8' , 07)" onmouseover="GetNome('b8' , 07)"></div>
-      <div id="b9"  class='jogador' onClick="onClickJogador('b9' , 08)" onmouseover="GetNome('b9' , 08)"></div>
-      <div id="b10" class='jogador' onClick="onClickJogador('b10', 09)" onmouseover="GetNome('b10', 09)"></div>
-      <div id="b11" class='jogador' onClick="onClickJogador('b11', 10)" onmouseover="GetNome('b11', 10)"></div>
+      <div id="b1"  class='jogador' onClick="onClickJogador('b1',  00)" onmouseover="GetNome('b1' , 00)" draggable="true"></div>
+      <div id="b2"  class='jogador' onClick="onClickJogador('b2' , 01)" onmouseover="GetNome('b2' , 01)" draggable="true"></div>
+      <div id="b3"  class='jogador' onClick="onClickJogador('b3' , 02)" onmouseover="GetNome('b3' , 02)" draggable="true"></div>
+      <div id="b4"  class='jogador' onClick="onClickJogador('b4' , 03)" onmouseover="GetNome('b4' , 03)" draggable="true"></div>
+      <div id="b5"  class='jogador' onClick="onClickJogador('b5' , 04)" onmouseover="GetNome('b5' , 04)" draggable="true"></div>
+      <div id="b6"  class='jogador' onClick="onClickJogador('b6' , 05)" onmouseover="GetNome('b6' , 05)" draggable="true"></div>
+      <div id="b7"  class='jogador' onClick="onClickJogador('b7' , 06)" onmouseover="GetNome('b7' , 06)" draggable="true"></div>
+      <div id="b8"  class='jogador' onClick="onClickJogador('b8' , 07)" onmouseover="GetNome('b8' , 07)" draggable="true"></div>
+      <div id="b9"  class='jogador' onClick="onClickJogador('b9' , 08)" onmouseover="GetNome('b9' , 08)" draggable="true"></div>
+      <div id="b10" class='jogador' onClick="onClickJogador('b10', 09)" onmouseover="GetNome('b10', 09)" draggable="true"></div>
+      <div id="b11" class='jogador' onClick="onClickJogador('b11', 10)" onmouseover="GetNome('b11', 10)" draggable="true"></div>
     </div>
-    <div>
-      <div id="divTime" class='nomeTime'>
-        <h1 id="nomeTime">
-          
-        </h1>
+      <div>
+        <div id="divTime" class='nomeTime campoPosicoes'>
+        </div>
       </div>
     </div>
-    <select #selectTime name="selectTime" id="selectTime" onchange="onChangeValueSelect(selectTime)"> 
-        <option value="">-- selecione um time --</option>
+    <select #selectTime class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="selectTime"
+      id="selectTime" onchange="onChangeValueSelect(selectTime)">
+      <option value="">-- selecione um time --</option>
     </select>
-    <select #selectFormacao name="selectFormacao" id="selectFormacao" onchange="onChangeValueSelectFormacao(selectFormacao)"> 
-        <option value="">-- selecione uma formação --</option>
+    <select #selectFormacao class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+      name="selectFormacao" id="selectFormacao" onchange="onChangeValueSelectFormacao(selectFormacao)">
+      <option value="">-- selecione uma formação --</option>
     </select>
-  <script src="./data/posicoes/posicoesConfig.js"></script>  
-  <script src="./data/times/brasil.js"></script>
-  <script src="./data/times/argentina.js"></script>
-  <script src="main.js"></script>
-  </body>
+    <script src="./data/posicoes/posicoesConfig.js"></script>
+    <script src="./data/times/brasil.js"></script>
+    <script src="./data/times/argentina.js"></script>
+    <script src="main.js"></script>
+</body>
+
 </html>

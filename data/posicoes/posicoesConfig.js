@@ -7,58 +7,58 @@ var posicoesConfig = {
             [
                 {
                     Id: "b1",
-                    Left: "75px",
-                    Top: "160px"
+                    Left: "85px",
+                    Top: "185px"
                 },
                 {
                     Id: "b2",
-                    Left: "140px",
-                    Top: "120px"
+                    Left: "150px",
+                    Top: "145px"
                 },
                 {
                     Id: "b3",
-                    Left: "140px",
-                    Top: "220px"
+                    Left: "150px",
+                    Top: "245px"
                 },
                 {
                     Id: "b4",
-                    Left: "160px",
-                    Top: "50px"
+                    Left: "170px",
+                    Top: "75px"
                 },
                 {
                     Id: "b5",
-                    Left: "160px",
-                    Top: "285px"
+                    Left: "170px",
+                    Top: "310px"
                 },
                 {
                     Id: "b6",
-                    Left: "325px",
-                    Top: "55px"
+                    Left: "335px",
+                    Top: "80px"
                 },
                 {
                     Id: "b7",
-                    Left: "325px",
-                    Top: "155px"
+                    Left: "335px",
+                    Top: "180px"
                 },
                 {
                     Id: "b8",
-                    Left: "325px",
-                    Top: "255px"
+                    Left: "335px",
+                    Top: "280px"
                 },
                 {
                     Id: "b9",
-                    Left: "535px",
-                    Top: "55px"
+                    Left: "545px",
+                    Top: "80px"
                 },
                 {
                     Id: "b10",
-                    Left: "535px",
-                    Top: "155px"
+                    Left: "545px",
+                    Top: "180px"
                 },
                 {
                     Id: "b11",
-                    Left: "535px",
-                    Top: "255px"
+                    Left: "545px",
+                    Top: "280px"
                 }
             ]
         },
@@ -68,58 +68,58 @@ var posicoesConfig = {
             [
                 {
                     Id: "b1",
-                    Left: "75px",
-                    Top: "160px"
+                    Left: "85px",
+                    Top: "185px"
                 },
                 {
                     Id: "b2",
-                    Left: "140px",
-                    Top: "55px"
+                    Left: "150px",
+                    Top: "80px"
                 },
                 {
                     Id: "b3",
-                    Left: "140px",
-                    Top: "160px"
+                    Left: "150px",
+                    Top: "185px"
                 },
                 {
                     Id: "b4",
-                    Left: "140px",
-                    Top: "255px"
+                    Left: "150px",
+                    Top: "280px"
                 },
                 {
                     Id: "b5",
-                    Left: "345px",
-                    Top: "275px"
+                    Left: "355px",
+                    Top: "300px"
                 },
                 {
                     Id: "b6",
-                    Left: "345px",
-                    Top: "55px"
+                    Left: "355px",
+                    Top: "80px"
                 },
                 {
                     Id: "b7",
-                    Left: "325px",
-                    Top: "115px"
+                    Left: "335px",
+                    Top: "140px"
                 },
                 {
                     Id: "b8",
-                    Left: "325px",
-                    Top: "205px"
+                    Left: "335px",
+                    Top: "230px"
                 },
                 {
                     Id: "b9",
-                    Left: "535px",
-                    Top: "55px"
+                    Left: "545px",
+                    Top: "80px"
                 },
                 {
                     Id: "b10",
-                    Left: "535px",
-                    Top: "155px"
+                    Left: "545px",
+                    Top: "180px"
                 },
                 {
                     Id: "b11",
-                    Left: "535px",
-                    Top: "255px"
+                    Left: "545px",
+                    Top: "280px"
                 }
             ]
         }

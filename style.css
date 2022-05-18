@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(136, 136, 136) !important;
+}
+
 div.field {
     background-color: #97BB87;
     width: 670px;
@@ -38,32 +42,44 @@ div.field {
     border-radius: 100%;
   }
   
+  .campoPosicoes {
+    position: relative;
+    padding: 40px 120px 0px 50px;
+  }
+
   .jogador {
     border: solid 1px rgb(0, 0, 0);
     border-radius: 100% !important;
     width: 38px !important;
     height: 38px !important;
-    position: absolute !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-image: url('./assets/default.png');
   }
-   
+  
+  #carouselImgTimes {
+    padding: 40px 120px 40px 40px;
+  }
+  
   #divTime{
-    background-size: 670px 115px;
-    background-position: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .nomeTime{
     color: rgb(255, 230, 0);
     text-align: center;
-    border: solid 1px blue;
-    width: 670px;
-    height: 115px;
+    margin: 10px;
+    width: 642px;
+    height: 400px;
+    border: solid 1px rgb(0, 0, 0);
     background-image: url('./assets/default.jpg');
   }
 
   .nomeTime h1{
       padding-left: 75%;
       padding-top: 60px;
+  }
+
+  select {
+    padding-top: 20px;
   }
