@@ -106,8 +106,10 @@
 
   <div class="row campoPosicoes">
 
-    <div class='field'>
-      <div class='lateral linha'>
+    <div class="col-md-8">
+
+      <div class='field'>
+        <div class='lateral linha'>
         <div class='linha area left'></div>
         <div class='circulo linha'></div>
         <div class='linha area right'></div>
@@ -124,11 +126,44 @@
       <div id="b10" class='jogador' onClick="onClickJogador('b10', 09)" onmouseover="GetNome('b10', 09)" draggable="true"></div>
       <div id="b11" class='jogador' onClick="onClickJogador('b11', 10)" onmouseover="GetNome('b11', 10)" draggable="true"></div>
     </div>
-      <div>
-        <div id="divTime" class='nomeTime campoPosicoes'>
-        </div>
+  </div>
+  <div class="col-md-4">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    <div>
+      <div id="divTime" class='nomeTime campoPosicoes'>
       </div>
     </div>
+  </div>
+
     <select #selectTime class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="selectTime"
       id="selectTime" onchange="onChangeValueSelect(selectTime)">
       <option value="">-- selecione um time --</option>
