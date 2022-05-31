@@ -1,0 +1,148 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Posicionamento Times</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CopaJS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./posicionamentoTimes/index.html">Posicionamento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page"
+                href="../getTimesAPI/index.html">API-Times</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <h1>Trabalho Copa do mundo <code>HTML|CSS|JS</code></h1>
+      <p>Este trabalho foi desenvolvido para a disciplina de desenlvimento Web do curso de <strong>ADS</strong>
+      </p>
+      <p><strong>IFSP - Catanduva</strong></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="list-group">
+        <button type="button" onclick="window.open('./posicionamentoTimes/index.html')"
+          class="list-group-item list-group-item-action active" aria-current="true">
+          Isaías Bueno - AL3006395
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">
+          Aluno - ALXXXXXXX
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">
+          Aluno - ALXXXXXXX
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <h1>
+        Posicionamento
+        <small class="text-muted" id="posicao"></small>
+      </h1>
+    </div>
+    <div class="row justify-content-md-center">
+      <h1 id="nomeTime"></h1>
+    </div>
+  </div>
+
+  <select #selectTime class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="selectTime"
+    id="selectTime" onchange="onChangeValueSelect(selectTime)">
+    <option value="">-- selecione um time --</option>
+  </select>
+  <select #selectFormacao class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+    name="selectFormacao" id="selectFormacao" onchange="onChangeValueSelectFormacao(selectFormacao)">
+    <option value="">-- selecione uma formação --</option>
+  </select>
+
+  <div class="row campoPosicoes">
+
+    <div class="col-md-8">
+
+      <div class='field'>
+        <div class='lateral linha'>
+          <div class='linha area left'></div>
+          <div class='circulo linha'></div>
+          <div class='linha area right'></div>
+        </div>
+        <div id="b1" class='jogador' onClick="onClickJogador('b1',  00)" onmouseover="GetNome('b1' , 00)"
+          draggable="true"></div>
+        <div id="b2" class='jogador' onClick="onClickJogador('b2' , 01)" onmouseover="GetNome('b2' , 01)"
+          draggable="true"></div>
+        <div id="b3" class='jogador' onClick="onClickJogador('b3' , 02)" onmouseover="GetNome('b3' , 02)"
+          draggable="true"></div>
+        <div id="b4" class='jogador' onClick="onClickJogador('b4' , 03)" onmouseover="GetNome('b4' , 03)"
+          draggable="true"></div>
+        <div id="b5" class='jogador' onClick="onClickJogador('b5' , 04)" onmouseover="GetNome('b5' , 04)"
+          draggable="true"></div>
+        <div id="b6" class='jogador' onClick="onClickJogador('b6' , 05)" onmouseover="GetNome('b6' , 05)"
+          draggable="true"></div>
+        <div id="b7" class='jogador' onClick="onClickJogador('b7' , 06)" onmouseover="GetNome('b7' , 06)"
+          draggable="true"></div>
+        <div id="b8" class='jogador' onClick="onClickJogador('b8' , 07)" onmouseover="GetNome('b8' , 07)"
+          draggable="true"></div>
+        <div id="b9" class='jogador' onClick="onClickJogador('b9' , 08)" onmouseover="GetNome('b9' , 08)"
+          draggable="true"></div>
+        <div id="b10" class='jogador' onClick="onClickJogador('b10', 09)" onmouseover="GetNome('b10', 09)"
+          draggable="true"></div>
+        <div id="b11" class='jogador' onClick="onClickJogador('b11', 10)" onmouseover="GetNome('b11', 10)"
+          draggable="true"></div>
+      </div>
+      <div>
+        <div id="divTime" class='nomeTime campoPosicoes'>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Nº</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Posição</th>
+          </tr>
+        </thead>
+        <tbody id="listJogadores">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <script src="./data/posicoes/posicoesConfig.js"></script>
+  <script src="./data/times/brasil.js"></script>
+  <script src="./data/times/argentina.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

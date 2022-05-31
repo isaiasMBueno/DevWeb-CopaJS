@@ -49,12 +49,17 @@ div.field {
 
   .jogador {
     border: solid 1px rgb(0, 0, 0);
-    border-radius: 100% !important;
+    border-radius: 100%;
     width: 38px !important;
     height: 38px !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-image: url('./assets/default.png');
+  }
+
+  .jogador:active{
+    border: solid 5px rgb(255, 0, 0);
+    border-radius: 80% !important;
   }
   
   #carouselImgTimes {
@@ -83,3 +88,48 @@ div.field {
   select {
     padding-top: 20px;
   }
+
+  #listJogadores{
+    width:80%;
+    margin:0 auto;
+    border:0;
+    box-shadow: 0 5px 30px;
+    border-spacing: 0;
+  }
+  
+  #listJogadores thead th{
+    font-weight: bold;
+    padding:5px 10px;
+  }
+  
+  #listJogadores tr td{
+    padding:5px 10px;
+    text-align: center;
+    
+    cursor: pointer; /**importante para não mostrar cursor de texto**/
+  }
+  
+  #listJogadores tr td:last-child{
+    text-align: right;
+  }
+  
+  /**Cor quando passar por cima**/
+  #listJogadores tr:hover td{
+    background-color: #feffb7;
+  }
+  
+  /**Cor quando selecionado**/
+  #listJogadores tr.selecionado td{
+    background-color: #aff7ff;
+  }
+  
+  button#visualizarDados{
+    background-color: white;
+    border: 1px solid black;
+    width:50%;
+    margin: 10px auto;
+    padding:10px 0;
+    display: block;
+    color: black;
+  }
+
