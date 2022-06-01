@@ -30,15 +30,14 @@
             <a class="nav-link active" aria-current="page" href="./posicionamentoTimes/index.html">Posicionamento</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page"
-                href="../getTimesAPI/index.html">API-Times</a>
+            <a class="nav-link" aria-current="page" href="../getTimesAPI/index.html">API-Times</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container mt-5 pt-25">
     <div class="row justify-content-md-center">
       <h1>Trabalho Copa do mundo <code>HTML|CSS|JS</code></h1>
       <p>Este trabalho foi desenvolvido para a disciplina de desenlvimento Web do curso de <strong>ADS</strong>
@@ -46,24 +45,10 @@
       <p><strong>IFSP - Catanduva</strong></p>
     </div>
   </div>
-  <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="list-group">
-        <button type="button" onclick="window.open('./posicionamentoTimes/index.html')"
-          class="list-group-item list-group-item-action active" aria-current="true">
-          Isaías Bueno - AL3006395
-        </button>
-        <button type="button" class="list-group-item list-group-item-action">
-          Aluno - ALXXXXXXX
-        </button>
-        <button type="button" class="list-group-item list-group-item-action">
-          Aluno - ALXXXXXXX
-        </button>
-      </div>
-    </div>
-  </div>
 
-  <div class="container">
+
+  <div class="container mt-5 pt-35">
+    <hr>
     <div class="row justify-content-md-center">
       <h1>
         Posicionamento
@@ -75,14 +60,19 @@
     </div>
   </div>
 
-  <select #selectTime class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="selectTime"
-    id="selectTime" onchange="onChangeValueSelect(selectTime)">
-    <option value="">-- selecione um time --</option>
-  </select>
-  <select #selectFormacao class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
-    name="selectFormacao" id="selectFormacao" onchange="onChangeValueSelectFormacao(selectFormacao)">
-    <option value="">-- selecione uma formação --</option>
-  </select>
+  <div class="row mt-5 pt-25 ms-5">
+    <div class="col-md-6">
+      <select #selectTime class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="selectTime"
+        id="selectTime" onchange="onChangeValueSelect(selectTime)">
+        <option value="">-- selecione um time --</option>
+      </select>
+      <select #selectFormacao class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+        name="selectFormacao" id="selectFormacao" onchange="onChangeValueSelectFormacao(selectFormacao)">
+        <option value="">-- selecione uma formação --</option>
+      </select>
+    </div>
+  </div>
+  </div>
 
   <div class="row campoPosicoes">
 
@@ -135,9 +125,39 @@
         </tbody>
       </table>
     </div>
+    <hr>
   </div>
 
+  <!-- <div id="wg-api-football-fixture" data-host="v3.football.api-sports.io" data-refresh="60" data-id="718243"
+    data-key="0476084f2fmshb2f9c2e55e54990p1c445bjsnb05a3cc3b8bf" data-theme="dark" data-show-errors="true"
+    class="api_football_loader">
+  </div>
+  <script type="module" src="https://widgets.api-sports.io/football/1.1.8/widget.js"></script>
 
+  <div id="wg-api-football-standings" data-host="v3.football.api-sports.io" data-league="39" data-team=""
+    data-season="2020" data-key="0476084f2fmshb2f9c2e55e54990p1c445bjsnb05a3cc3b8bf" data-theme="dark"
+    data-show-errors="true" class="api_football_loader"></div>
+  <script type="module" src="https://widgets.api-sports.io/football/1.1.8/widget.js"></script> -->
+
+
+  <footer>
+    <div class="container col-md-3 mt-5 pt-10">
+      <div class="row justify-content-md-center">
+        <div class="list-group">
+          <button type="button" onclick="window.open('./posicionamentoTimes/index.html')"
+            class="list-group-item list-group-item-action active" aria-current="true">
+            Isaías Bueno - AL3006395
+          </button>
+          <button type="button" class="list-group-item list-group-item-action">
+            Aluno - ALXXXXXXX
+          </button>
+          <button type="button" class="list-group-item list-group-item-action">
+            Aluno - ALXXXXXXX
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="./data/posicoes/posicoesConfig.js"></script>
   <script src="./data/times/brasil.js"></script>
