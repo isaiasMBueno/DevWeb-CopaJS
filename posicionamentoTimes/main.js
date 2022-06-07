@@ -125,7 +125,6 @@ function setJogadoresImage() {
         if (_selectedTeam == null || _selectedTeam == "") {
           document.getElementById("divTime").src = "assets/default.jpg";
         } else {
-          console.log(_allTeams[_selectedTeam].ImagemTime);
           document.getElementById("divTime").src = _allTeams[_selectedTeam].ImagemTime;
         }
         setJogadoresImage();

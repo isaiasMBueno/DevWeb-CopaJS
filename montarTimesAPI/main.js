@@ -28,7 +28,6 @@ LoadForm();
 
 
 function setPosicaoJogadores(value) {
-  console.log(value);
   if (value == "null" || value == "") {
     for (i = 1; i < 12; i++) {
       document.getElementById('b' + i).style.display = "none";
