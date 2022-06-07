@@ -55,10 +55,10 @@ div.circulo {
   height: 38px !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background-image: url('./assets/default.png');
+  /* background-image: url('./assets/default.png'); */
 }
 
-.jogador.focus {
+.jogador:active {
   border: solid 5px rgb(255, 0, 0);
   border-radius: 80% !important;
 }
@@ -68,14 +68,21 @@ div.circulo {
 }
 
 #divTime {
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto;
+  width: 150px;
+  overflow: none;
+  display: flex;
+}
+
+svg{
+  max-width: 150px !important;
+  max-height: 150px !important;
+  size: cover;
 }
 
 .flag {
   height: 150px;
   width: 150px;
-  background-image: url('./assets/default.jpg');
 }
 
 .nomeTime h1 {
