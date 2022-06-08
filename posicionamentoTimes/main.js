@@ -1,4 +1,7 @@
-var _allTeams = { "Brasil": Brasil, "Argentina": Argentina };
+var _allTeams = {
+   "Argentina": Argentina, "Bolivia": Bolivia, "Brasil": Brasil,
+   "Chile": Chile, "Colombia": Colombia, "Equador": Equador,
+   "Paraguai": Paraguai, "Peru": Peru, "Uruguai": Uruguai, "Venezuela": Venezuela};
 var _selectedTeam = "";
 
 function LoadForm() {
@@ -124,8 +127,10 @@ function setJogadoresImage() {
         document.getElementById("nomeTime").innerText = _selectedTeam;
         if (_selectedTeam == null || _selectedTeam == "") {
           document.getElementById("divTime").src = "assets/default.jpg";
+          document.getElementById("divBrasao").src = "assets/default.jpg";
         } else {
           document.getElementById("divTime").src = _allTeams[_selectedTeam].ImagemTime;
+          document.getElementById("divBrasao").src = _allTeams[_selectedTeam].BrasaoTime;
         }
         setJogadoresImage();
       }

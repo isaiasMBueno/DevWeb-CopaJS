@@ -93,8 +93,8 @@ function onClickJogador(idValue, positionValue) {
 function onChangeValueSelect(selectedValue) {
   document.getElementById("divTime").innerHTML = "";
   _selectedTeam = _allTeams.find(x => x.id == selectedValue.value);
-  let listJogadores = document.getElementById('listJogadores');
-  listJogadores.innerHTML = "";
+
+
 
 
   const bd = document.createElement("svg");
@@ -110,7 +110,6 @@ function onChangeValueSelect(selectedValue) {
   } else {
     document.getElementById("divTime").appendChild(bd);
   }
-  count = 1;
 
   $.ajax({
     url: "https://soccer.sportmonks.com/api/v2.0/countries/" + selectedValue.value + "/players?api_token=wJVutxYKJdFCVYEG7zw6mTUhpFdzksYeUE4SkUWdyfouuxGX4TMwXi0flBXh",
@@ -118,34 +117,61 @@ function onChangeValueSelect(selectedValue) {
     $(data.data)
       .each(function () {
         _allPlayers.push(this);
-
-        if (count < 12) {
-          document.getElementById('b' + count).style.backgroundImage = "url(" + this.image_path + ")";
+        if(_allPlayers.length == 100){
+          pushTablePlayers(_allPlayers);
         }
-
-          let linha = document.createElement('tr');
-          linha.addEventListener('click', function () {
-            selectJogador(count);
-          });
-
-          let col1 = document.createElement('td');
-          col1.innerText = count;
-
-          let col2 = document.createElement('td');
-          col2.innerText = this.display_name;
-
-          let col3 = document.createElement('td');
-          col3.innerText = GetPosicaoJogador(this.position_id);
-
-          linha.append(col1, col2, col3)
-          listJogadores.appendChild(linha);
-        count++;
       });
-
   });
 
+  // pushTablePlayers();
 
 
+}
+
+function pushTablePlayers(value){
+  let listJogadores = document.getElementById('listJogadores');
+  listJogadores.innerHTML = "";
+
+  value = value.sort((a, b) => { return a.position_id - b.position_id;});
+
+  console.log(value);
+
+  for(let i = 1; i < value.length; i++)
+  {
+
+    if (i < 12) {
+      document.getElementById('b' + i).style.backgroundImage = "url(" + value[i].image_path + ")";
+    }
+
+    let linha = document.createElement('tr');
+    linha.addEventListener('click', function () {
+      selectJogador(i);
+    });
+
+    let col1 = document.createElement('td');
+    col1.innerText = i;
+
+    let col2 = document.createElement('td');
+    col2.innerText = value[i].display_name;
+
+    let col3 = document.createElement('td');
+    col3.innerText = GetPosicaoJogador(value[i].position_id);
+
+    let col4 = document.createElement('td');
+    col4.innerText = value[i].weight;
+
+    let col5 = document.createElement('td');
+    col5.innerText = value[i].height;
+
+    let col6 = document.createElement('td');
+    col6.innerText = value[i].birthdate;
+
+    let col7 = document.createElement('td');
+    col7.innerHTML = "<div class='jogador' style='background-image: url("+value[i].image_path+"')></div>";
+    
+    linha.append(col1, col2, col3, col4, col5, col6, col7)
+    listJogadores.appendChild(linha);
+  }
 }
 
 function onChangeValueSelectFormacao(selectedValue) {

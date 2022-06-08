@@ -1,5 +1,6 @@
 var Brasil = {
     ImagemTime: "./assets/flags/brazil.svg",
+    BrasaoTime: "./assets/teams-images/brasil.png",
     Jogadores:
     [
         {
