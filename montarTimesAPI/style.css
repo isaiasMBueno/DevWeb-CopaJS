@@ -55,7 +55,7 @@ div.circulo {
   height: 38px !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  /* background-image: url('./assets/default.png'); */
+  background-image: url('../posicionamentoTimes/assets/default.png');
 }
 
 .jogador:active {
@@ -68,17 +68,17 @@ div.circulo {
 }
 
 #divTime {
-  height: auto;
-  width: 150px;
-  overflow: none;
+  /* height: auto; */
+  /* width: 150px; */
+  /* max-width: 40% !important;  */
   display: flex;
 }
 
 svg{
-  max-width: 150px !important;
-  max-height: 150px !important;
+  max-width: 750px !important;
+  /* max-height: 150px !important; */
   size: cover;
-}
+} 
 
 .flag {
   height: 150px;
@@ -100,6 +100,8 @@ select {
   border: 0;
   box-shadow: 0 5px 30px;
   border-spacing: 0;
+  overflow-y: scroll;
+  height: 500px;
 }
 
 #listJogadores thead th {
@@ -114,6 +116,12 @@ select {
   cursor: pointer;
   /**importante para não mostrar cursor de texto**/
 }
+
+.jogador.focus {
+  border: solid 5px rgb(255, 0, 0);
+  border-radius: 80% !important;
+}
+
 
 #listJogadores tr td:last-child {
   text-align: right;

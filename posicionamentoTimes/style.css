@@ -129,17 +129,3 @@ select {
 #listJogadores tr.selecionado td {
   background-color: #aff7ff;
 }
-
-button#visualizarDados {
-  background-color: white;
-  border: 1px solid black;
-  width: 50%;
-  margin: 10px auto;
-  padding: 10px 0;
-  display: block;
-  color: black;
-}
-
-/* .alunos{
-  top: 200px;
-} */
