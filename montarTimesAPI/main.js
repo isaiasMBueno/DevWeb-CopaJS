@@ -218,6 +218,12 @@ function selectJogador(value){
     _count = 1;
   }
 
+  if(document.getElementById('b' + _count).style.display == "none"){
+    this.openModal("dv-modal");
+    document.getElementById("erroModal").innerHTML = "<strong>Erro! </strong> Posição não informada!"
+    return;
+  }
+
   if(window.confirm("Deseja substituir o " + GetNome('b'+_count, _count) + "?")){
     let jogador = document.getElementById('b'+_count);
     
@@ -231,8 +237,35 @@ function selectJogador(value){
 }
 
 function onClickJogador(idValue, positionValue) {
+  
+  if(!_selectedTeam){
+    this.openModal('dv-modal');
+    document.getElementById("erroModal").innerHTML = "<strong>Erro! </strong>Time não informado!"
+    return;
+  }
+
   var nomeJogador = this.GetNome(idValue, positionValue);
   window.open(
     'https://www.google.com/search?q=' + nomeJogador + "+seleção+" + _selectedTeam.name,
     "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=900,height=500");
+}
+
+function openModal(mn) {
+  let modal = document.getElementById(mn);
+
+  if (typeof modal == 'undefined' || modal === null)
+      return;
+
+  modal.style.display = 'Block';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(mn) {
+  let modal = document.getElementById(mn);
+
+  if (typeof modal == 'undefined' || modal === null)
+      return;
+
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
 }

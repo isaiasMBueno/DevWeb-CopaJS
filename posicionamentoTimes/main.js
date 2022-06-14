@@ -117,6 +117,12 @@ function GetPosicaoJogador(value) {
 
 function onClickJogador(idValue, positionValue) {
   var nomeJogador = this.GetNome(idValue, positionValue).replace(" ", "+");
+  if(nomeJogador == "?")
+  {
+      this.openModal("dv-modal");
+      return;
+  }
+
   var posicaoJogador = this.GetPosicaoJogador(_allTeams[_selectedTeam].Jogadores[positionValue].Posicao);
   window.open(
     'https://www.google.com/search?q=' + nomeJogador + "+" + posicaoJogador + "+seleção+" + _selectedTeam,
@@ -147,4 +153,24 @@ function selectJogador(count) {
   }
 
   document.getElementById('b' + count).classList.add("focus");
+}
+
+function openModal(mn) {
+  let modal = document.getElementById(mn);
+
+  if (typeof modal == 'undefined' || modal === null)
+      return;
+
+  modal.style.display = 'Block';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(mn) {
+  let modal = document.getElementById(mn);
+
+  if (typeof modal == 'undefined' || modal === null)
+      return;
+
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
 }
